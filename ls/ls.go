@@ -6,8 +6,8 @@ import (
 	"flag"
 	"fmt"
 	"os"
-	"strconv"
 	"os/user"
+	"strconv"
 	"syscall"
 )
 
@@ -15,9 +15,10 @@ const (
 	Newline = "\n"
 )
 
-var longFormat bool;
+var longFormat bool
+
 func init() {
-	flag.BoolVar(&longFormat, "l",  false, "Long Format")
+	flag.BoolVar(&longFormat, "l", false, "Long Format")
 }
 
 func ls(filename string, longFormat bool) {
